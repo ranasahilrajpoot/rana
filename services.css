@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #f3dc5c;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+}
+nav .logo{
+    color: rgb(26, 18, 18);
+    font-size: 35px;
+    font-weight: 600;
+    text-shadow: 0px 0px 3px black;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+nav ul li a{
+    color: rgb(26, 18, 18);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    border-bottom:1.5 solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav .menu-btn i{
+    color: rgb(26, 18, 18);
+     font-size: 20px;
+     cursor: pointer;
+     display: none;
+}
+#click:checked ~ ul {
+   left: 0;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.bgimg{
+    width: 100%;
+    height: 90vh;
+}
+.servicesone{
+    width: 100%;
+    height: 100vh;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.servicesone .one{
+    width: 25%;
+    height: 85vh;
+    box-shadow: 1px 1px 15px black;
+}.servicesone .two{
+    width: 25%;
+    height: 85vh;
+    box-shadow: 1px 1px 15px black;
+}.servicesone .three{
+    width: 25%;
+    height: 85vh;
+    box-shadow: 1px 1px 15px black;
+}
+.servicestwo{
+    width: 100%;
+    height: 85vh;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.servicestwo .one{
+    width: 25%;
+    height: 85vh;
+    box-shadow: 1px 1px 15px black;
+}.servicestwo .two{
+    width: 25%;
+    height: 85vh;
+    box-shadow: 1px 1px 15px black;
+}.servicestwo .three{
+    width: 25%;
+    height: 85vh;
+    box-shadow: 1px 1px 15px black;
+}
+.servicesone .ser{
+    margin: 2vw;
+    color: #000000c0;
+
+}
+.servicestwo .ser{
+    margin: 2vw;
+    color: #000000c0;
+}
+.servicesone .ser h1{
+    color: #f3dc5c;
+    
+    text-shadow: 1px 1px 4px #1d1c1a ;
+}
+.servicestwo .ser h1{
+    color: #f3dc5c;
+    text-shadow: 1px 1px 4px #1d1c1a ;
+}
+
+
+.servicesone .ser a{
+     text-decoration: none;
+     color: rgb(124, 124, 255);
+     font-size: 20px;
+}
+.servicesone .ser a:hover{
+    color: #f3dc5c;
+}
+.servicestwo .ser a{
+    text-decoration: none;
+    color: rgb(124, 124, 255);
+    font-size: 20px;
+}
+.servicestwo .ser a:hover{
+    color: #f3dc5c;
+}
+.contantq{
+    width: 80%;
+    height: 25vh;
+    text-align: center;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+.contant{
+    width: 80%;
+    height: 25vh;
+    text-align: center;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+.contant h2{
+    text-shadow: 1px 1px 3px #887f49;
+}
+.contant h1{
+    color: #f3dc5c;
+    font-size: 3vw;
+    text-shadow: 2px 2px 7px #000000;
+}
+.contant p{
+    color:#2e2626;
+    font-size: 20px;
+    line-height: 30px;
+}
+.contantq h2{
+    text-shadow: 1px 1px 3px #887f49;
+}
+.contantq h1{
+    color: #f3dc5c;
+    font-size: 3vw;
+    text-shadow: 2px 2px 7px #000000;
+}
+.contantq p{
+    color:#2e2626;
+    font-size: 20px;
+    line-height: 30px;
+}
+#gapes{
+    margin-top: 2px;
+    width: 100%;
+    height: 1px;
+}
+#gape{
+    margin-top: 2px;
+    width: 100%;
+    height: 1px; 
+}
+@media (max-width:600px) {
+    nav .logo{
+        font-size: 25px;
+        margin-top: 4px;
+    }
+    nav{
+        padding: 0 40px 0 50px;
+    }
+    nav .menu-btn i{
+        display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+        content:'\f00d';
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background:  #f3dc5c ;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 40px 0;
+
+    }
+    nav ul li a{
+        width: 100%;
+        margin-left:-100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55 );
+
+    }
+    #click:checked ~ ul li a{
+        margin-left: 0;
+    }
+    .bgimg{
+        height: 70vh;
+    }
+    
+    .servicesone{
+        display: block;
+        height: 270vh;
+        width: 80%;
+        margin-left: 15%;
+        margin-top: 60px;
+    }
+   .servicesone .one{
+        width: 90%;
+        
+    }
+    .servicesone .two{
+        width: 90%;
+        margin-top: 30px;
+        
+   }  
+        .servicesone .three{
+        width: 90%;       
+        margin-top: 30px;
+   }
+   .servicestwo{
+    display: block;
+    width: 80%;
+    margin-left: 15%;
+    
+}
+    .servicestwo .one{
+    width: 90%;  
+}
+
+    .servicestwo .two{
+    width: 90%;
+    margin-top: 30px;
+}  
+    .servicestwo .three{
+    width: 90%;       
+    margin-top: 30px;
+}
+#gapes{
+    margin-top: 1050px;
+    
+}
+#gape{
+    margin-top: 540px;
+}
+.servicesone{
+    margin-top: 120px;
+}
+.contantq{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+}
